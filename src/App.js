@@ -4,10 +4,15 @@ import Header from './pages/Header';
 import SideBar from './pages/SideBar';
 import Footer from './pages/Footer';
 import Content from './pages/content';
+import React, { useEffect, useState } from 'react';
 
 
 
 function App() {
+  // const [count,setCount]=useState(0)
+  // useEffect(()=>{
+  //   console.log("Hello ") ;
+  // })
   return (
     <BrowserRouter>
       <div>
@@ -19,6 +24,13 @@ function App() {
             <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>
+       
+       {/* <h1 className='text-2xl text-white'>Hello Surbhi {count}</h1>
+       <button onClick={()=>setCount(count+1)} className='bg-rose-500 p-3'>Click Here</button> */}
+       
+
+       
+
       </div>
     </BrowserRouter>
   );
